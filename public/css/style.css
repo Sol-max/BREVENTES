@@ -205,16 +205,30 @@ a:focus,
 }
 /* Header Section */
 .intro {
-  display: table;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   padding: 0;
-  background: url(../img/intro-bg.jpg) center center no-repeat;
   background-color: #e5e5e5;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
 }
+
+.intro img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Mimics background-size: cover */
+}
+
+@media (max-width: 768px) {
+  .intro {
+    height: 400px; /* Adjust height for mobile */
+  }
+
+  .intro img {
+    object-fit: contain; /* Ensure full visibility on smaller screens */
+  }
+}
+
 .intro .overlay {
   background: rgba(0, 0, 0, 0.2);
 }
