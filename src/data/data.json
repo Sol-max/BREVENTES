@@ -1,21 +1,16 @@
 {
-  "Header": {
-    "title": "Autode värvimine",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
-  },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph": "Firma OÜ Breventes tegutseb autode kere ja värvimistööde turul juba 25 aastat.",
+    "text": "",
     "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
+      "Kogemus ja asjatundlikkus",
+      "Kaasaegne tehnoloogia",
+      "Kvaliteetsed materjalid"
     ],
     "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
+      "Kliendikesksus",
+      "Aja kokkuhoid",
+      "Garantii"
     ]
   },
   "Gallery": [
@@ -152,7 +147,7 @@
     }
   ],
   "Contact": {
-    "address": " Parking lot, Tuha 3e, 11415 Tallinn ",
+    "address": " Parkla, Tuha 3e, 11415 Tallinn ",
     "phone": "+3725536590",
     "email": "breventes@gmail.com",
     "facebook": "fb.com",
@@ -161,24 +156,34 @@
   },
   "Features": [
     {
-      "icon": "fa fa-comments-o",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-paint-brush",
+      "title": "Värvimistööd 49 €/h",
+      "text": ""
     },
     {
-      "icon": "fa fa-bullhorn",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-wrench",
+      "title": "Plekitööd 59 €/h ",
+      "text": ""
     },
     {
-      "icon": "fa fa-group",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-puzzle-piece",
+      "title": "Komplekteerimine 39 €/h",
+      "text": ""
     },
     {
-      "icon": "fa fa-magic",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-star",
+      "title": "Poleerimine 29 €/h",
+      "text": ""
+    },
+    {
+      "icon": "fa fa-stethoscope",
+      "title": "Elektritööd/diagnostika 39 €/h",
+      "text": ""
+    },
+    {
+      "icon": "fa fa-file-text-o",
+      "title": "Kahjukäsitlus",
+      "text": ""
     }
   ]
 }

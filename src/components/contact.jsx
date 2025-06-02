@@ -67,7 +67,7 @@ export const Contact = (props) => {
                         id="name"
                         name="name"
                         className="form-control"
-                        placeholder="Name"
+                        placeholder="Nimi"
                         required
                         onChange={handleChange}
                       />
@@ -95,7 +95,7 @@ export const Contact = (props) => {
                     id="message"
                     className="form-control"
                     rows="4"
-                    placeholder="Message"
+                    placeholder="Tekst"
                     required
                     onChange={handleChange}
                   ></textarea>
@@ -103,7 +103,7 @@ export const Contact = (props) => {
                 </div>
                 <div id="success"></div>
                 <button type="submit" className="btn btn-custom btn-lg">
-                  Send Message
+                  Saada kiri
                 </button>
               </form>
             </div>
@@ -113,7 +113,7 @@ export const Contact = (props) => {
               <h3>Contact Info</h3>
               <p>
                 <span>
-                  <i className="fa fa-map-marker"></i> Address
+                  <i className="fa fa-map-marker"></i> Aadress
                 </span>
                 {props.data ? props.data.address : "loading"}
               </p>
@@ -121,7 +121,7 @@ export const Contact = (props) => {
             <div className="contact-item">
               <p>
                 <span>
-                  <i className="fa fa-phone"></i> Phone
+                  <i className="fa fa-phone"></i> Telefoninumber
                 </span>{" "}
                 {props.data ? props.data.phone : "loading"}
               </p>
@@ -163,9 +163,9 @@ export const Contact = (props) => {
       <div id="footer">
         <div className="container text-center">
           <p>
-            &copy; 2023 {" "}
-            <a href="http://www.templatewire.com" rel="nofollow">
-              TemplateWire
+            &copy; 2025 {" "}
+            <a href="https://www.italiens.ee/" rel="nofollow">
+              ITALIENS
             </a>
           </p>
         </div>
