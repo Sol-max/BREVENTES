@@ -52,11 +52,11 @@ export const Navigation = (props) => {
                 Testimonials
               </a>
             </li>*/}
-            <li>
+            {/*<li>
               <a href="#team" className="page-scroll">
                 Meeskond
               </a>
-            </li>
+            </li>*/}
             <li>
               <a href="#contact" className="page-scroll">
               Kontaktid

@@ -1,3 +1,9 @@
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 body,
 html {
   font-family: "Open Sans", sans-serif;
@@ -75,8 +81,9 @@ hr {
 }
 /* Navigation */
 #menu {
-  padding: 15px;
+  padding: 5px;
   transition: all 0.8s;
+  box-sizing: border-box; 
 }
 #menu.navbar-default {
   background-color: #fff;
@@ -98,7 +105,7 @@ hr {
   font-weight: 400;
   padding: 8px 2px;
   border-radius: 0;
-  margin: 9px 20px 0;
+  margin: 9px 10px 0;
 }
 #menu.navbar-default .navbar-nav > li > a:after {
   display: block;
