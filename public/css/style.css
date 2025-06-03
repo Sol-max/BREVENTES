@@ -6,6 +6,7 @@ html {
 }
 body,
 html {
+  overflow-x: hidden;
   font-family: "Open Sans", sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
@@ -67,8 +68,6 @@ ol {
 ul,
 ol {
   padding: 0;
-  webkit-padding: 0;
-  moz-padding: 0;
 }
 hr {
   height: 2px;
@@ -80,7 +79,7 @@ hr {
   border: 0;
 }
 /* Navigation */
-#menu {
+#menu { 
   padding: 5px;
   transition: all 0.8s;
   box-sizing: border-box; 
@@ -150,7 +149,7 @@ hr {
 .navbar-default .navbar-toggle:hover > .icon-bar {
   background-color: #608dfd;
 }
-.section-title {
+.section-title { 
   margin-bottom: 70px;
 }
 .section-title h2 {
@@ -169,7 +168,7 @@ hr {
   margin-left: -30px;
   left: 50%;
 }
-.section-title p {
+.section-title p { 
   font-size: 18px;
 }
 .btn-custom {
@@ -229,12 +228,12 @@ a:focus,
   object-fit: cover; /* Mimics background-size: cover */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 100%) {
   .intro {
     height: 400px; /* Adjust height for mobile */
   }
 
-  .intro img {
+  .intro img { 
     object-fit: contain; /* Ensure full visibility on smaller screens */
   }
 }
@@ -271,6 +270,8 @@ header .intro-text {
 /* Features Section */
 #features {
   background: #f6f6f6;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 #features i.fa {
   font-size: 38px;
@@ -283,6 +284,8 @@ header .intro-text {
   border-radius: 50%;
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 /* About Section */
 #about {
@@ -321,7 +324,8 @@ header .intro-text {
   padding-right: 8px;
 }
 #about img {
-  width: 520px;
+  max-width: 100%; 
+  height: auto;
   margin-top: 10px;
   background: #fff;
   border-right: 0;
@@ -416,7 +420,6 @@ header .intro-text {
 }
 .hover-bg:hover .hover-text > h4 {
   opacity: 1;
-  -webkit-backface-visibility: hidden;
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
@@ -623,13 +626,12 @@ label {
   border-bottom: 2px solid #608dfd;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 100%) {  
   #about img {
     margin: 50px 0;
   }
 }
-
-.totop {  
+.totop {
   position: fixed;
   bottom: 20px;
   right: 10px;
