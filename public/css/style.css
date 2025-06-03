@@ -5,8 +5,7 @@ html {
   box-sizing: inherit;
 }
 body,
-html {
-  overflow-x: hidden;
+html {  
   font-family: "Open Sans", sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
@@ -225,16 +224,16 @@ a:focus,
 .intro img {
   width: 100%;
   height: auto;
-  object-fit: cover; /* Mimics background-size: cover */
+  object-fit: cover; 
 }
 
 @media (max-width: 100%) {
   .intro {
-    height: 400px; /* Adjust height for mobile */
+    height: 400px; 
   }
 
   .intro img { 
-    object-fit: contain; /* Ensure full visibility on smaller screens */
+    object-fit: contain; 
   }
 }
 
@@ -268,24 +267,62 @@ header .intro-text {
   text-align: center;
 }
 /* Features Section */
+.col-xs-6,
+.col-md-3 {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+#features .row {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+}
+#features .col-xs-6 h3,
+#features .col-xs-6 p {
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+@media (max-width: 767px) {
+    #features .col-xs-6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+    }
+}
 #features {
-  background: #f6f6f6;
-  word-break: break-word;
-  overflow-wrap: break-word;
+    background: #f6f6f6;   
 }
 #features i.fa {
-  font-size: 38px;
-  margin-bottom: 20px;
-  transition: all 0.5s;
-  color: #fff;
-  width: 100px;
-  height: 100px;
-  padding: 30px 0;
-  border-radius: 50%;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
-  word-break: break-word;
-  overflow-wrap: break-word;
+    font-size: 32px;
+    margin-bottom: 15px;
+    transition: all 0.5s;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    padding: 24px 0;
+    border-radius: 50%;
+    background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);    
+}
+/* СТИЛИ ДЛЯ ДИАГНОСТИКИ */
+/*
+.container, .row, [class^="col-"] {
+  border: 1px solid red !important; /* Контейнеры и колонки - красные */
+  /*
+}
+#features .col-xs-6 {
+  border: 1px solid green !important; /* Ваши колонки - зеленые */
+  /*
+}
+#features i.fa, #features h3, #features p {
+  border: 1px solid blue !important; /* Внутренние элементы - синие */
+  /*
 }
 /* About Section */
 #about {

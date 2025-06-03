@@ -15,13 +15,11 @@ export const Contact = (props) => {
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
   const clearState = () => setState({ ...initialState });
-
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(name, email, message);
-    
-    const SERVICE_ID = "service_02ja24x";   
-    const TEMPLATE_ID = "template_mot4y0d";  
+    const SERVICE_ID = "service_02ja24x";
+    const TEMPLATE_ID = "template_mot4y0d";
     const USER_ID = "KGmNs4R4Jy5EtaeUX";
     emailjs
       .sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
@@ -52,21 +50,19 @@ export const Contact = (props) => {
                   {props.data ? props.data.address : "loading"}
                   <br />
                   <a
-                    className="map-link"
+                    className="map-link btn btn-custom btn-lg"
                     aria-label="View larger map"
                     target="_blank"
                     href="https://www.google.com/maps/place/Parking+lot,+Tuha+3e,+11415+Tallinn,+Estonia/@59.4296375,24.7977962,18z/data=!4m6!3m5!1s0x4692ecab36a9c583:0xdba54e8bead8ddcd!8m2!3d59.4295738!4d24.7976624!16s%2Fg%2F11cphdjmlb?hl=en-US&entry=ttu"
                     rel="noopener noreferrer" // For security reasons
-
                   >
                     Vaata kaardilt
                   </a>
-                  
                 </p>
-              </div>
-              <form name="sentMessage" validate onSubmit={handleSubmit}>
+              </div>              
+              <form name="sentMessage"  validate="true" onSubmit={handleSubmit}>
                 <div className="row">
-                  <div className="col-md-6">
+                  <div className="col-md-12"> 
                     <div className="form-group">
                       <input
                         type="text"
@@ -76,12 +72,15 @@ export const Contact = (props) => {
                         placeholder="Nimi"
                         required
                         onChange={handleChange}
-                        value={name} // value для очистки формы
+                        value={name}
                       />
                       <p className="help-block text-danger"></p>
                     </div>
                   </div>
-                  <div className="col-md-6">
+                </div> 
+
+                <div className="row"> 
+                  <div className="col-md-12"> 
                     <div className="form-group">
                       <input
                         type="email"
@@ -96,20 +95,25 @@ export const Contact = (props) => {
                       <p className="help-block text-danger"></p>
                     </div>
                   </div>
-                </div>
-                <div className="form-group">
-                  <textarea
-                    name="message"
-                    id="message"
-                    className="form-control"
-                    rows="4"
-                    placeholder="Tekst"
-                    required
-                    onChange={handleChange}
-                    value={message}
-                  ></textarea>
-                  <p className="help-block text-danger"></p>
-                </div>
+                </div> 
+                <div className="row"> 
+                  <div className="col-md-12"> 
+                    <div className="form-group">
+                      <textarea
+                        name="message"
+                        id="message"
+                        className="form-control"
+                        rows="4"
+                        placeholder="Tekst"
+                        required
+                        onChange={handleChange}
+                        value={message}
+                      ></textarea>
+                      <p className="help-block text-danger"></p>
+                    </div>
+                  </div>
+                </div> 
+
                 <div id="success"></div>
                 <button type="submit" className="btn btn-custom btn-lg">
                   Saada kiri

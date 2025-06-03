@@ -38,5 +38,4 @@ const ArrowToTop = () => {
     );
     
 };
-
 export default ArrowToTop;
