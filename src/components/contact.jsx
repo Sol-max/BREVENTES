@@ -19,15 +19,21 @@ export const Contact = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(name, email, message);
+    
+    const SERVICE_ID = "service_02ja24x";   
+    const TEMPLATE_ID = "template_mot4y0d";  
+    const USER_ID = "KGmNs4R4Jy5EtaeUX";
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
+      .sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
       .then(
         (result) => {
-          console.log(result.text);
+          console.log("Email successfully sent!", result.text);
+          alert("Aitäh! Teie sõnum on saadetud.");
           clearState();
         },
         (error) => {
-          console.log(error.text);
+          console.error("Failed to send email.", error.text);
+          alert("Viga sõnumi saatmisel. Palun proovige uuesti.");
         }
       );
   };
@@ -70,6 +76,7 @@ export const Contact = (props) => {
                         placeholder="Nimi"
                         required
                         onChange={handleChange}
+                        value={name} // value для очистки формы
                       />
                       <p className="help-block text-danger"></p>
                     </div>
@@ -84,6 +91,7 @@ export const Contact = (props) => {
                         placeholder="Email"
                         required
                         onChange={handleChange}
+                        value={email}
                       />
                       <p className="help-block text-danger"></p>
                     </div>
@@ -98,6 +106,7 @@ export const Contact = (props) => {
                     placeholder="Tekst"
                     required
                     onChange={handleChange}
+                    value={message}
                   ></textarea>
                   <p className="help-block text-danger"></p>
                 </div>
