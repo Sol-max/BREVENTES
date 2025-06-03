@@ -632,11 +632,11 @@ label {
 .totop {  
   position: fixed;
   bottom: 20px;
-  right: 30px;
+  right: 10px;
   cursor: pointer;  
 }
 .totop .svg-inline--fa {
-  font-size: 4em; 
+  font-size: 3em; 
   color: rgba(0, 0, 0, 0.561); 
 }
 .map-link {
