@@ -673,10 +673,11 @@ label {
   bottom: 20px;
   right: 10px;
   cursor: pointer;  
+  z-index: 10000;
 }
 .totop .svg-inline--fa {
   font-size: 3em; 
-  color: rgba(0, 0, 0, 0.561); 
+  color: rgba(12, 233, 63, 0.971); 
 }
 .map-link {
   color: #17191a; 
