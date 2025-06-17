@@ -59,10 +59,10 @@ export const Contact = (props) => {
                     Vaata kaardilt
                   </a>
                 </p>
-              </div>              
-              <form name="sentMessage"  validate="true" onSubmit={handleSubmit}>
+              </div>
+              <form name="sentMessage" validate="true" onSubmit={handleSubmit}>
                 <div className="row">
-                  <div className="col-md-12"> 
+                  <div className="col-md-12">
                     <div className="form-group">
                       <input
                         type="text"
@@ -77,10 +77,10 @@ export const Contact = (props) => {
                       <p className="help-block text-danger"></p>
                     </div>
                   </div>
-                </div> 
+                </div>
 
-                <div className="row"> 
-                  <div className="col-md-12"> 
+                <div className="row">
+                  <div className="col-md-12">
                     <div className="form-group">
                       <input
                         type="email"
@@ -95,9 +95,9 @@ export const Contact = (props) => {
                       <p className="help-block text-danger"></p>
                     </div>
                   </div>
-                </div> 
-                <div className="row"> 
-                  <div className="col-md-12"> 
+                </div>
+                <div className="row">
+                  <div className="col-md-12">
                     <div className="form-group">
                       <textarea
                         name="message"
@@ -112,7 +112,7 @@ export const Contact = (props) => {
                       <p className="help-block text-danger"></p>
                     </div>
                   </div>
-                </div> 
+                </div>
 
                 <div id="success"></div>
                 <button type="submit" className="btn btn-custom btn-lg">
@@ -136,7 +136,11 @@ export const Contact = (props) => {
                 <span>
                   <i className="fa fa-phone"></i> Telefoninumber
                 </span>{" "}
-                {props.data ? props.data.phone : "loading"}
+                {props.data ? (
+                  <a href={`tel:${props.data.phone}`}>{props.data.phone}</a>
+                ) : (
+                  "loading"
+                )}
               </p>
             </div>
             <div className="contact-item">
@@ -144,7 +148,11 @@ export const Contact = (props) => {
                 <span>
                   <i className="fa fa-envelope-o"></i> Email
                 </span>{" "}
-                {props.data ? props.data.email : "loading"}
+                {props.data ? (
+                  <a href={`mailto:${props.data.email}`}>{props.data.email}</a>
+                ) : (
+                  "loading"
+                )}
               </p>
             </div>
           </div>
@@ -157,16 +165,7 @@ export const Contact = (props) => {
                       <i className="fa fa-facebook"></i>
                     </a>
                   </li>
-                  <li>
-                    <a href={props.data ? props.data.twitter : "/"}>
-                      <i className="fa fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={props.data ? props.data.youtube : "/"}>
-                      <i className="fa fa-youtube"></i>
-                    </a>
-                  </li>
+
                 </ul>
               </div>
             </div>
