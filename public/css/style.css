@@ -676,9 +676,25 @@ label {
   z-index: 10000;
 }
 .totop .svg-inline--fa {
-  font-size: 3em; 
-  color: rgba(12, 233, 63, 0.971); 
+  font-size: 4em; 
+  color: rgba(37, 45, 39, 0.971); 
 }
 .map-link {
   color: #17191a; 
+}
+.contact-item a[href^="tel:"] {
+  text-decoration: none;
+  color: #dae3edfb; /* Цвет ссылки */
+}
+
+.contact-item a[href^="tel:"]:hover {
+  text-decoration: underline;
+}
+.contact-item a[href^="mailto:"] {
+  text-decoration: none;
+  color: #dae3edfb; /* Цвет ссылки */
+}
+
+.contact-item a[href^="mailto:"]:hover {
+  text-decoration: underline;
 }
