@@ -22,14 +22,15 @@ const App = () => {
       scrollRef.current = new SmoothScroll('a[href*="#"]', {
         speed: 1000,
         speedAsDuration: true,
-        easing: 'easeInOutQuint',         
+        easing: 'easeInOutQuint',
         updateURL: false,
         offset: function (anchor, toggle) {
-          const fixedNavbar = document.getElementById('menu'); 
+          const fixedNavbar = document.getElementById('menu');
           return fixedNavbar ? fixedNavbar.offsetHeight : 0;
         }
       });
     }
+   
   }, []);
   return (
     <div>

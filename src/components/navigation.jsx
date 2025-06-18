@@ -34,7 +34,7 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
           </button>
           <a className="navbar-brand page-scroll" href="#page-top" onClick={handleScroll}> {/* Добавил onClick и сюда */}
-            Osaühing BREVENTES
+            BREVENTES
           </a>{" "}
         </div>
 
@@ -44,7 +44,7 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="#features" className="page-scroll" onClick={handleScroll}> {/* Теперь просто handleScroll */}
+              <a href="#features" className="page-scroll" onClick={handleScroll}> {}
                 Teenused
               </a>
             </li>
